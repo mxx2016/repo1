@@ -1,5 +1,11 @@
-m12
-1
-2
-4
-6
+public Object newMethod1() throws SQLException {
+    return method2();
+}
+
+public Object method2() throws SQLException {
+    Object object = null;
+    try {
+        object = generateSomeObject();
+    catch (SomeException e) {}
+    return object;
+}
